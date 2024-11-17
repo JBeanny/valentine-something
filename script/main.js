@@ -1,3 +1,7 @@
+onload = () => {
+  document.body.classList.remove("container");
+};
+
 // Animation Timeline
 const animationTimeline = () => {
   // Spit chars that needs to be animated individually
@@ -272,6 +276,12 @@ const animationTimeline = () => {
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
     tl.restart();
+  });
+
+  // gift button
+  const giftBtn = document.getElementById("gift");
+  giftBtn.addEventListener("click", () => {
+    window.open("/flower.html");
   });
 };
 
